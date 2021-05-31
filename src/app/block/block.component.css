@@ -1,0 +1,12 @@
+.block{
+  width:50px;
+  height:50px;
+  text-transform: uppercase;
+	color:white; /*#3e3e3e;*/
+	background:#53b7e8; /*#7cb289;*/
+	border-bottom:1px solid #343434;
+	transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+}

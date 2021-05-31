@@ -1,0 +1,12 @@
+<button (click)="newGame()">New Game</button>
+<h3><span *ngIf="status != 'none'">{{ status }}</span></h3>
+
+<div class="grid">
+  <div *ngFor="let value of blockValues; let i = index">
+    <app-block [value]="value" [id]="i" [isWinner]=isWinner (blockClick)="onBlockClick($event)"></app-block>
+  </div>
+</div>
+<br>
+<div *ngFor="let number of history; let i = index">
+  <p>{{i+1}}. <span *ngIf="((i+1)%2)==0">O</span><span *ngIf="((i+1)%2)==1">X</span> moves on block <span>{{number+1}}</span>.  <button [disabled]=isWinner (click)="rewind(i)">Revert</button></p>
+</div>
