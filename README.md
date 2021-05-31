@@ -25,3 +25,13 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Deploy to GitHub page
+
+Run `ng deploy your-angular-project --base-href=/<repositoryname>/`
+
+or
+
+Run `npm run deploy` after modifying **line 10 in package.json** to `    "deploy": "ng deploy --base-href=/<repositoryname>/"`
+
+The command will create a **gh-pages branch** in the repository and the GitHub Page setting need to have the **root of the gh-pages branch as source**.
